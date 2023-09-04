@@ -21,7 +21,8 @@ function Gallery() {
             <div key={key} className={`gallery-image gallery-image-${key + 1}`}>
               <img
                 src={item}
-                alt={`coffee shop image $`}
+                alt={`coffee shop $`}
+                loading="lazy"
                 onClick={() => {
                   setFullImageIsOpen(true);
                   setSelectedImage(item);
@@ -42,7 +43,8 @@ function Gallery() {
           >
             <img
               src={selectedImage}
-              alt="image"
+              alt="full"
+              loading="lazy"
               onClick={(event) => {
                 event.stopPropagation();
               }}

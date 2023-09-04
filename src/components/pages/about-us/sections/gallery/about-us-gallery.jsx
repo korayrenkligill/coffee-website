@@ -27,6 +27,7 @@ function AboutUsGallery() {
               <img
                 src={item}
                 alt={`coffee shop $`}
+                loading="lazy"
                 onClick={() => {
                   setFullImageIsOpen(true);
                   setSelectedImage(item);
@@ -48,6 +49,7 @@ function AboutUsGallery() {
             <img
               src={selectedImage}
               alt="coffee shop"
+              loading="lazy"
               onClick={(event) => {
                 event.stopPropagation();
               }}

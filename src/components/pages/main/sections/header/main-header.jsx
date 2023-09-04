@@ -6,7 +6,7 @@ import React from "react";
 function MainHeader() {
   return (
     <div className="MainHeader">
-      <div className="main-container">
+      <div className="main-container" loading="lazy">
         <h1 className="main-title">Coffee is the key to a good day</h1>
         <p className="main-description">
           Coffee is much more than just a beverage to be enjoyed. Ideal for

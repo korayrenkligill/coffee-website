@@ -11,21 +11,21 @@ function Footer() {
         <div>
           <h3>Navigations</h3>
           <Link to="/">Home</Link>
-          <Link to="/menu">Menu</Link>
+          <Link to="/menu/all">Menu</Link>
           <Link to="/about-us">About us</Link>
           <Link to="/contact">Contact</Link>
         </div>
         <div>
           <h3>Contact</h3>
           <p>123 Main Street, Downtown, Cityville, USA</p>
-          <a>(555) 123-4567</a>
-          <a>info@coffeact.com</a>
+          <p>(555) 123-4567</p>
+          <p>info@coffeact.com</p>
         </div>
         <div>
           <h3>Social Medias</h3>
-          <a>Instagram</a>
-          <a>Facebook</a>
-          <a>Twitter</a>
+          <p>Instagram</p>
+          <p>Facebook</p>
+          <p>Twitter</p>
         </div>
       </div>
       <div className="footer-bottom">

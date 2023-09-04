@@ -66,7 +66,7 @@ function Specials() {
               <div key={key}>
                 <div className="specials-slider-item">
                   <div className="specials-slider-item-image">
-                    <img src={item.image} alt="" />
+                    <img src={item.image} alt={item.name} loading="lazy" />
                   </div>
                   <div className="specials-slider-item-texts">
                     <div>

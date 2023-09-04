@@ -11,21 +11,25 @@ function OurStory() {
         <div className="our-story-images-col-1">
           <img
             src="https://i.pinimg.com/564x/b5/9a/9b/b59a9b63cadbd4ea787792abae859510.jpg"
-            alt=""
+            alt="coffee 1"
+            loading="lazy"
           />
           <img
             src="https://i.pinimg.com/564x/51/c6/68/51c66849566e471e62530c0df2777c1b.jpg"
-            alt=""
+            alt="coffee 2"
+            loading="lazy"
           />
         </div>
         <div className="our-story-images-col-2">
           <img
             src="https://i.pinimg.com/564x/32/85/95/328595f3437fc2662d7db6accf65a776.jpg"
-            alt=""
+            alt="coffee 3"
+            loading="lazy"
           />
           <img
             src="https://i.pinimg.com/564x/6c/17/f1/6c17f157818e8fa630df07fe26b8dd01.jpg"
-            alt=""
+            alt="coffee 4"
+            loading="lazy"
           />
         </div>
       </div>
