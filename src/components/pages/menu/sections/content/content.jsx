@@ -2,6 +2,7 @@
 import "./content.css";
 //JSON
 import productsJson from "../../../../json/products.json";
+import categories from "../../../../json/categories.json";
 //Other
 import React, { useState } from "react";
 import { AiOutlineClockCircle } from "react-icons/ai";
@@ -67,42 +68,20 @@ function Content({ category }) {
           >
             All Coffees
           </NavLink>
-          <NavLink
-            to={"/menu/hot-coffees"}
-            onClick={() => {
-              setFilterIsOpen(false);
-              paginate(1);
-            }}
-          >
-            Hot Coffees
-          </NavLink>
-          <NavLink
-            to={"/menu/cold-coffees"}
-            onClick={() => {
-              setFilterIsOpen(false);
-              paginate(1);
-            }}
-          >
-            Cold Coffees
-          </NavLink>
-          <NavLink
-            to={"/menu/milky-drinks"}
-            onClick={() => {
-              setFilterIsOpen(false);
-              paginate(1);
-            }}
-          >
-            Milky Drinks
-          </NavLink>
-          <NavLink
-            to={"/menu/snacks"}
-            onClick={() => {
-              setFilterIsOpen(false);
-              paginate(1);
-            }}
-          >
-            Snacks
-          </NavLink>
+          {categories.categories.map((item) => {
+            return (
+              <NavLink
+                key={item}
+                to={`/menu/${item.category_url}`}
+                onClick={() => {
+                  setFilterIsOpen(false);
+                  paginate(1);
+                }}
+              >
+                {item.category_name}
+              </NavLink>
+            );
+          })}
         </div>
       </div>
       <div className="menu-products">

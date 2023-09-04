@@ -1,0 +1,8 @@
+{
+  "categories": [
+    { "category_url": "hot-coffees", "category_name": "Hot Coffees" },
+    { "category_url": "cold-coffees", "category_name": "Cold Coffees" },
+    { "category_url": "milky-coffees", "category_name": "Milky Coffees" },
+    { "category_url": "snacks", "category_name": "Snacks" }
+  ]
+}
