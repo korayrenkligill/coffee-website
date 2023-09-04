@@ -1,0 +1,36 @@
+.ProductDetailHeader {
+  background-image: url("https://png.pngtree.com/background/20230516/original/pngtree-coffee-shop-with-many-wooden-tables-and-chairs-picture-image_2611848.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ProductDetailHeader .product-detail-header-container {
+  padding-top: 2.5rem;
+  height: 20rem;
+  background-color: var(--color-low-opacity-black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.ProductDetailHeader .product-detail-header-container .product-detail-header-title {
+  color: var(--color-whitetext-1);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-xxxl);
+  margin-bottom: 0.8rem;
+  cursor: default;
+}
+@media screen and (max-width: 1440px) {
+  .ProductDetailHeader .product-detail-header-container {
+    padding: 2.5rem 17% 0rem 17%;
+  }
+  .ProductDetailHeader .product-detail-header-container .product-detail-title {
+    font-size: var(--font-size-xl);
+  }
+}
+@media screen and (max-width: 550px) {
+  .ProductDetailHeader .product-detail-header-container {
+    padding: 2.5rem 7% 0rem 7%;
+  }
+}

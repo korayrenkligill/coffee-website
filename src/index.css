@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+:root {
+  --font-family-poppins: "Poppins", sans-serif;
+  --font-family-fredericka: "Fredericka the Great", cursive;
+
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.2rem;
+  --font-size-xl: 1.5rem;
+  --font-size-xxl: 2rem;
+  --font-size-xxxl: 3rem;
+
+  --color-primary: #f3c379;
+
+  --color-background-1: #1a1a1a;
+  --color-background-2: #161616;
+  --color-background-3: #121212;
+
+  --color-text-1: #232323;
+  --color-text-2: #161616;
+
+  --color-whitetext-1: #ffffff;
+  --color-whitetext-2: #cbcbcb;
+  --color-whitetext-3: #808080;
+
+  --color-low-opacity-black: #0000009b;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+a {
+  color: inherit;
+}
+button {
+  background-color: inherit;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+html,
+body,
+.root,
+.App {
+  min-height: 100vh;
+}
+
+body {
+  background-color: var(--color-background-1);
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

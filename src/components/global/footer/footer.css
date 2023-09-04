@@ -1,0 +1,54 @@
+.Footer .footer-top {
+  background-color: var(--color-background-2);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 17%;
+}
+.Footer .footer-top div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.Footer .footer-top div h3 {
+  color: var(--color-whitetext-1);
+  cursor: default;
+  font-family: var(--font-family-poppins);
+}
+.Footer .footer-top div p,
+.Footer .footer-top div a {
+  color: var(--color-whitetext-2);
+  transition: color 0.4s;
+  cursor: pointer;
+  font-family: var(--font-family-poppins);
+}
+.Footer .footer-top div p:hover,
+.Footer .footer-top div a:hover {
+  color: var(--color-primary);
+}
+.Footer .footer-bottom {
+  text-align: center;
+  padding: 0.5rem;
+  color: var(--color-whitetext-2);
+  background-color: var(--color-background-3);
+}
+.Footer .footer-bottom a {
+  color: var(--color-primary);
+}
+@media screen and (max-width: 1440px) {
+  .Footer .footer-top {
+    padding: 1rem 7%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Footer .footer-top {
+    padding: 1rem 7%;
+    flex-direction: column;
+  }
+  .Footer .footer-bottom {
+    font-size: var(--font-size-sm);
+  }
+}

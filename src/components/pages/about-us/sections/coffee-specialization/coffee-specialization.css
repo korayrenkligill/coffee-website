@@ -1,0 +1,68 @@
+.CoffeeSpecialization {
+  margin: 2rem 17%;
+}
+.CoffeeSpecialization .coffee-specialization-container {
+  background-color: var(--color-background-2);
+  display: grid;
+  grid-template-columns: 40% 60%;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.CoffeeSpecialization .coffee-specialization-container .coffee-specialization-left {
+  background-image: url("https://www.acouplecooks.com/wp-content/uploads/2021/08/Cafe-Au-Lait-001s.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.CoffeeSpecialization .coffee-specialization-container .coffee-specialization-slider {
+  width: 100%;
+}
+.CoffeeSpecialization .coffee-specialization-container .coffee-specialization-slider .coffee-specialization-slider-item {
+  padding: 4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  text-align: left;
+}
+.CoffeeSpecialization .coffee-specialization-container .coffee-specialization-slider .coffee-specialization-slider-item h3 {
+  color: var(--color-whitetext-1);
+  font-size: var(--font-size-xl);
+  font-family: var(--font-family-poppins);
+  margin-bottom: 0.5rem;
+}
+.CoffeeSpecialization .coffee-specialization-container .coffee-specialization-slider .coffee-specialization-slider-item p {
+  color: var(--color-whitetext-2);
+  font-size: var(--font-size-sm);
+  font-family: var(--font-family-poppins);
+}
+@media screen and (max-width: 1440px) {
+  .CoffeeSpecialization {
+    margin: 2rem 7%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .CoffeeSpecialization .coffee-specialization-container .coffee-specialization-slider .coffee-specialization-slider-item {
+    padding: 4rem 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .CoffeeSpecialization .coffee-specialization-container {
+    grid-template-columns: 100%;
+  }
+  .CoffeeSpecialization .coffee-specialization-container .coffee-specialization-left {
+    height: 200px;
+  }
+  .CoffeeSpecialization .coffee-specialization-container .coffee-specialization-slider .coffee-specialization-slider-item {
+    padding: 1.5rem;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .CoffeeSpecialization .coffee-specialization-container .coffee-specialization-slider .coffee-specialization-slider-item h3 {
+    font-size: var(--font-size-md);
+  }
+}

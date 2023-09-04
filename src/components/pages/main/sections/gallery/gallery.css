@@ -1,0 +1,95 @@
+.Gallery h2.gallery-title {
+  font-size: var(--font-size-xxxl);
+  font-family: var(--font-family-fredericka);
+  color: var(--color-primary);
+  margin: 0px 17%;
+  font-weight: normal;
+  text-align: center;
+}
+.Gallery .gallery-images {
+  user-select: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px 300px;
+  margin: 2rem 17%;
+  gap: 2rem;
+}
+.Gallery .gallery-images .gallery-image {
+  overflow: hidden;
+  cursor: pointer;
+}
+.Gallery .gallery-images .gallery-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.4s;
+}
+.Gallery .gallery-images .gallery-image:hover img {
+  transform: scale(1.1);
+}
+.Gallery .gallery-images div.gallery-image-1 {
+  grid-row: 1/3;
+}
+.Gallery .gallery-images div.gallery-image-4 {
+  grid-row: 1/3;
+  grid-column: 3;
+}
+.Gallery div.full-image {
+  position: relative;
+  z-index: 10000000;
+}
+.Gallery div.full-image img {
+  max-width: 80%;
+  max-height: 80%;
+  filter: drop-shadow(var(--boxshadow));
+}
+.Gallery div.full-image .background-close-button {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.316);
+  backdrop-filter: grayscale(100%) blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+.Gallery div.full-image button {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  background-color: transparent;
+  font-size: 2rem;
+  color: white;
+}
+@media screen and (max-width: 1024px) {
+  .Gallery .gallery-images {
+    grid-template-columns: 1fr 1fr;
+  }
+  .Gallery .gallery-images div.gallery-image-1 {
+    grid-row: auto;
+  }
+  .Gallery .gallery-images div.gallery-image-4 {
+    grid-row: auto;
+    grid-column: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Gallery .gallery-images {
+    margin: 2rem 7%;
+    grid-template-rows: 200px 200px;
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .Gallery .gallery-images {
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 300px;
+  }
+  .Gallery .gallery-image-1,
+  .Gallery .gallery-image-4 {
+    display: none;
+  }
+}

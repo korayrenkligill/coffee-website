@@ -1,0 +1,37 @@
+.AboutUsMission {
+  background-image: url("https://i.ytimg.com/vi/ZJ_KzbtIDBk/maxresdefault.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  .about-us-mission-container {
+    background-color: var(--color-low-opacity-black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 17%;
+    h2.about-us-mission-title {
+      color: var(--color-primary);
+      font-size: var(--font-size-xxxl);
+      font-family: var(--font-family-fredericka);
+      font-weight: normal;
+      margin-bottom: 1rem;
+    }
+    p {
+      color: var(--color-whitetext-1);
+      font-size: var(--font-size-md);
+      font-family: var(--font-family-poppins);
+      font-weight: normal;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .AboutUsMission {
+    .about-us-mission-container {
+      padding: 4rem 7%;
+    }
+  }
+}

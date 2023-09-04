@@ -1,0 +1,88 @@
+.Navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  user-select: none;
+}
+.Navbar .mobile-navbar button {
+  font-size: var(--font-size-xl);
+  color: var(--color-whitetext-1);
+  display: none;
+}
+.Navbar .mobile-navbar button .icon {
+  transform: translateY(2px);
+}
+.Navbar .mobile-navbar .navbar-logo {
+  cursor: default;
+  font-weight: bold;
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-md);
+  color: var(--color-whitetext-1);
+}
+.Navbar .mobile-navbar .navbar-logo .navbar-logo-icon {
+  transform: translateY(2px);
+}
+.Navbar .navbar-links a {
+  color: var(--color-whitetext-2);
+  font-size: var(--font-size-sm);
+  font-family: var(--font-family-poppins);
+  transition: color 0.4s;
+}
+.Navbar .navbar-links a:hover {
+  color: var(--color-whitetext-1);
+}
+.Navbar .navbar-links a.active {
+  color: var(--color-primary);
+}
+.Navbar .navbar-links a:not(:last-child) {
+  padding-right: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .Navbar {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    padding: 0px;
+  }
+  .Navbar .mobile-navbar {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.2s;
+  }
+  .Navbar .mobile-navbar button {
+    display: block;
+  }
+  .Navbar .mobile-navbar.open {
+    background-color: var(--color-background-1);
+  }
+  .Navbar .navbar-links {
+    transition: opacity 0.2s, background-color 0.2s;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+  }
+  .Navbar .navbar-links a {
+    display: block;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .Navbar .navbar-links.close {
+    opacity: 0;
+  }
+  .Navbar .navbar-links.open {
+    opacity: 1;
+    background-color: var(--color-background-1);
+  }
+}

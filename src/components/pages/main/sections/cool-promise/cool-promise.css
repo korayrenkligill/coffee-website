@@ -1,0 +1,36 @@
+.CoolPromise {
+  background-image: url("https://png.pngtree.com/background/20230427/original/pngtree-paris-restaurants-with-restaurant-exteriors-picture-image_2497982.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.CoolPromise div {
+  background-color: var(--color-low-opacity-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-xxxl);
+  font-family: var(--font-family-fredericka);
+  letter-spacing: 2px;
+  color: var(--color-whitetext-1);
+  height: 300px;
+}
+@media screen and (max-width: 768px) {
+  .CoolPromise div {
+    font-size: var(--font-size-xxl);
+  }
+}
+@media screen and (max-width: 500px) {
+  .CoolPromise div {
+    height: 200px;
+    font-size: var(--font-size-xl);
+  }
+}
+@media screen and (max-width: 400px) {
+  .CoolPromise div {
+    font-size: var(--font-size-lg);
+  }
+}

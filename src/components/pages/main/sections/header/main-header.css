@@ -1,0 +1,78 @@
+.MainHeader {
+  background-image: url("https://png.pngtree.com/background/20230516/original/pngtree-coffee-shop-with-many-wooden-tables-and-chairs-picture-image_2611848.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.MainHeader .main-container {
+  padding-top: 2.5rem;
+  height: 40rem;
+  background-color: var(--color-low-opacity-black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.MainHeader .main-container .main-title {
+  color: var(--color-whitetext-1);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-xxl);
+  margin-bottom: 0.8rem;
+  cursor: default;
+}
+.MainHeader .main-container .main-description {
+  cursor: default;
+  color: var(--color-whitetext-2);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-md);
+  margin-bottom: 1.6rem;
+}
+.MainHeader .main-container .main-button {
+  background-color: transparent;
+  border: 1px solid var(--color-whitetext-1);
+  box-sizing: border-box;
+  color: var(--color-whitetext-1);
+  font-size: 16px;
+  font-weight: 700;
+  font-family: var(--font-family-poppins);
+  padding: 12px 30px;
+  position: relative;
+  z-index: 10;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  transition: color 0.4s, background-color 0.4s;
+}
+.MainHeader .main-container .main-button::before {
+  content: "";
+  background-color: var(--color-primary);
+  opacity: 0.4;
+  height: calc(100% + 3px);
+  position: absolute;
+  right: -7px;
+  top: -9px;
+  transition: background-color 300ms ease-in;
+  width: 100%;
+  z-index: -1;
+}
+.MainHeader .main-container .main-button:hover {
+  background-color: var(--color-whitetext-1);
+  color: var(--color-text-1);
+}
+@media screen and (max-width: 1440px) {
+  .MainHeader .main-container {
+    padding: 2.5rem 17% 0rem 17%;
+  }
+  .MainHeader .main-container .main-title {
+    font-size: var(--font-size-xl);
+  }
+  .MainHeader .main-container .main-description {
+    font-size: var(--font-size-sm);
+  }
+}
+@media screen and (max-width: 550px) {
+  .MainHeader .main-container {
+    padding: 2.5rem 7% 0rem 7%;
+  }
+}
