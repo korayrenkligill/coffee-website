@@ -85,6 +85,10 @@
         justify-content: space-between;
         padding: 0.4rem 1rem;
         h3 {
+          width: 220px;
+          white-space: nowrap; /* Metni alt satıra geçirmeden sıkıştır */
+          overflow: hidden; /* Taşan metni gizle */
+          text-overflow: ellipsis; /* Taşan metnin sonuna üç nokta ekle */
           font-size: var(--font-size-md);
           color: var(--color-whitetext-1);
           font-family: var(--font-family-poppins);

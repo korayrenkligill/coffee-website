@@ -5,6 +5,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { AiFillClockCircle } from "react-icons/ai";
 import { ImPriceTag } from "react-icons/im";
+import ImageLoader from "../../../../global/imageLoader";
 
 function ProductDetailContent({ product }) {
   return (
@@ -22,7 +23,8 @@ function ProductDetailContent({ product }) {
       </div>
       <div className="product-detail-container">
         <div className="product-detail-container-image">
-          <img src={product.image} alt={product.name} />
+          <ImageLoader image={product.image} name={product.name} />
+          {/* <img src={product.image} alt={product.name} /> */}
         </div>
         <div className="product-detail-container-texts">
           <h3>Preparation</h3>

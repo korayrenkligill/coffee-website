@@ -8,6 +8,7 @@ import React, { useState } from "react";
 import { AiOutlineClockCircle } from "react-icons/ai";
 import { BiMenu } from "react-icons/bi";
 import { NavLink, useNavigate } from "react-router-dom";
+import ImageLoader from "../../../../global/imageLoader";
 
 function Content({ category }) {
   const navigation = useNavigate();
@@ -95,7 +96,8 @@ function Content({ category }) {
               }}
             >
               <div className="product-image">
-                <img src={item.image} alt={item.name} />
+                <ImageLoader image={item.image} name={item.name} />
+                {/* <img src={item.image} alt={item.name} /> */}
                 <p className="product-order-time">
                   <AiOutlineClockCircle className="icon" /> {item.order_time}
                 </p>
