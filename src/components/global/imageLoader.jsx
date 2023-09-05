@@ -16,8 +16,8 @@ function ImageLoader({ image, name }) {
     };
   }, []);
 
-  if (imageLoaded) return <img src={image} alt={name} />;
-  else return <img src="/404image.jpg" alt={name} />;
+  if (imageLoaded) return <img src={image} alt={name} loading="lazy" />;
+  else return <img src="/404image.jpg" alt={name} loading="lazy" />;
 }
 
 export default ImageLoader;

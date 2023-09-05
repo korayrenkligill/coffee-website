@@ -32,6 +32,10 @@
         font-family: var(--font-family-poppins);
         font-size: var(--font-size-sm);
         h2 {
+          width: 200px; /* Metin kutusu genişliği */
+          white-space: nowrap; /* Metni alt satıra geçirmeden sıkıştır */
+          overflow: hidden; /* Taşan metni gizle */
+          text-overflow: ellipsis; /* Taşan metnin sonuna üç nokta ekle */
           font-weight: normal;
           color: var(--color-whitetext-1);
         }

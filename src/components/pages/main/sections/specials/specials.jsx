@@ -7,6 +7,7 @@ import React from "react";
 import Slider from "react-slick";
 import { AiOutlineClockCircle } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
+import ImageLoader from "../../../../global/imageLoader";
 
 function Specials() {
   const navigation = useNavigate();
@@ -66,15 +67,19 @@ function Specials() {
               <div key={key}>
                 <div className="specials-slider-item">
                   <div className="specials-slider-item-image">
-                    <img src={item.image} alt={item.name} loading="lazy" />
+                    <ImageLoader image={item.image} name={item.name} />
+                    {/* <img src={item.image} alt={item.name} loading="lazy" /> */}
                   </div>
                   <div className="specials-slider-item-texts">
                     <div>
                       <h2>{item.name}</h2>
-                      <p>{item.category}</p>
+                      <p>
+                        {item.category !== "" ? item.category : "no category"}
+                      </p>
                     </div>
                     <p>
-                      <AiOutlineClockCircle className="icon" /> {item.orderTime}
+                      <AiOutlineClockCircle className="icon" />{" "}
+                      {item.order_time}
                     </p>
                   </div>
                   <button
