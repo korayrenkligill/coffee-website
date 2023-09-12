@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Proje Adı
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bu proje bir kafe veya kahve satıcısının tanıtım ve ürün menüsünü yayınlaması için oluşturulmuştur.
 
-## Available Scripts
+## Kurulum
 
-In the project directory, you can run:
+1. Projeyi klonlayın:
+   ```sh
+   git clone https://github.com/korayrenkligill/coffee-website.git
+   ```
+2. Bağımlılıkları yükleyin:
+   ```sh
+   npm install
+   ```
+3. /src/components/json klasöründe bulunan cateegories.json ve bu kategorilere uygun şekilde products.json dosyasında bulunan ürünleri düzenleyin
 
-### `npm start`
+4. Projeyi başlatın
+   ```sh
+   npm start
+   ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Kullanım
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+JSON dosyalarını ve JSX dosyalarındaki yazıları kendinize uygun düzenlediğinizi ve projeyi başlattığınızı varsayalım.
+Karşınıza http://localhost:[port] uzantısında web sayfası gelecektir.<br> <br>
+<b><i>Home:</i></b> sizin ana sayfanızı temsil etmektedir. Bu sayfa diğer 3 sayfanın özet birleştirmesi gibidir biraz mağazanızı tanıtır biraz ürünlerinizi ve biraz da şirketinizi. <br> <br>
+<b><i>Menu:</i></b> adından da anlaşılacağı üzere sizin menü sayfanızdır burada kategorilere ayrılmış biçimde tüm ürünleriniz gösterilmektedir. Ürüne tıklanması durumunda ürünün detayları da kullanıcıya sunulur.<br> <br>
+<b><i>About Us:</i></b> Şirketiniz ve mağazanız/kafeniz için tanıtım sayfasıdır.<br> <br>
+<b><i>Contact:</i></b> İletişim sayfasıdır kullanıcılar bu sayfa üzerinden aldığı bilgiler ile sizinle iletişim kurabilir.
 
-### `npm test`
+## Masaüstü Görseller
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Home
 
-### `npm run build`
+![image](https://i.ibb.co/2cs59zB/screencapture-localhost-3000-2023-09-12-13-49-27.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Menu
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![image](https://i.ibb.co/2tp4C5L/screencapture-localhost-3000-2023-09-12-13-51-29.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Mobil Görseller
 
-### `npm run eject`
+### Home
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![image](https://i.ibb.co/BsqFFG7/screencapture-localhost-3000-2023-09-12-13-52-39.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Menu
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![image](https://i.ibb.co/88WZh57/screencapture-localhost-3000-2023-09-12-13-53-50.png)

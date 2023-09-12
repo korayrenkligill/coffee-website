@@ -11,22 +11,28 @@ import Menu from "./components/pages/menu/menu";
 import AboutUs from "./components/pages/about-us/about-us";
 import Contact from "./components/pages/contact/contact";
 import ProductDetail from "./components/pages/product-detail/product-detail";
+import { HashRouter } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <div className="Content">
-        <Routes>
-          <Route path="/" element={<Main />} />
-          <Route path="/menu/:category" element={<Menu />} />
-          <Route path="/menu/products/:name/:no" element={<ProductDetail />} />
-          <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+    <HashRouter>
+      <div className="App">
+        <Navbar />
+        <div className="Content">
+          <Routes>
+            <Route path="/" element={<Main />} />
+            <Route path="/menu/:category" element={<Menu />} />
+            <Route
+              path="/menu/products/:name/:no"
+              element={<ProductDetail />}
+            />
+            <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </HashRouter>
   );
 }
 
